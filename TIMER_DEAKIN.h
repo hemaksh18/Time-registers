@@ -14,10 +14,12 @@ public:
 
     // Wait for a time period of 0.1ms ticks
     void wait(float period);
-
-private:
+    
     // Configuring the timer registers
     void configure_timer_registers(uint16_t start_count, uint16_t end_count, uint16_t prescaler);
+
+    setting up GCLK
+    void setup_GCLK();
 };
 
 #endif 
